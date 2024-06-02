@@ -1,0 +1,21 @@
+<h1>Calculator</h1>
+<form action="" method="post">
+{% csrf_token %}
+<label for="Num1">Num1 :</label>
+<input type="text" value='{{n1}}' name="Num1">
+<br><br>
+Select Operator : 
+<select name="op" >
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<br><br>
+<label for="Num2">Num2 :</label>
+<input type="text" value='{{n2}}' name="Num2">
+<br><br>
+<button>Submit</button>
+<br><br>
+Output :<input type="text" value="{{value}}" name="output">
+</form>
