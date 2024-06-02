@@ -22,6 +22,6 @@ def form(request):
                 n = n1 / n2
     except:
         n = "invalid input"
-        return n
+        print(n)
     content = {"n1":n1,"n2":n2,'value': n}
     return render(request,'form.html',content)
